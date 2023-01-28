@@ -2,6 +2,8 @@
   --primary: #231F20;
   --secondary: #275DAD;
   --terciary: #BEBBBB;
+  --details: #F5F5F5; 
+  --extra: #525252;
 }
 
 a, a:visited {
@@ -24,17 +26,17 @@ header {
   font-size: 18px;
 }
 
-#input-box {
+header > div {
   padding-top: 20px;
   padding-bottom: 9px;
 }
 
-#input-box form {
+header > div form {
   display: inline-block;
   position: relative;
 }
 
-#input-box form input {
+header > div form input {
   height: 44px;
   border-radius: 22px;
   width: 597px;
@@ -42,37 +44,44 @@ header {
   padding: 0 21px;
   margin-left: 146px;
   font-size: 16px;
+  background-color: var(--extra);
+  color: var(--terciary);
 }
 
-#input-box form input:focus {
+header > div form input:focus {
   outline: 0;
 }
 
-#input-box img {
-  width: 92px;
+header > div img {
+  width: 100px;
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 20px;
 }
 
 #camera-icon {
   right: 53px;
+  color: var(--terciary);
 }
 
 #cross-icon {
   right: 160px;
   padding-right: 10px;
   border-right: 1px solid var(--terciary);
+  color: var(--terciary);
 }
 
 #keyboard-icon {
   right: 125px;
+  color: var(--terciary);
 }
 
 #mic-icon {
   right: 88px;
+  color: var(--terciary);
 }
 
 #search-icon {
   right: 18px;
+  color: var(--secondary);
 }
