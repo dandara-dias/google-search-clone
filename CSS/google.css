@@ -1,3 +1,78 @@
-h1 {
-  color: red;
+:root {
+  --primary: #231F20;
+  --secondary: #275DAD;
+  --terciary: #BEBBBB;
+}
+
+a, a:visited {
+  color: var(--secondary);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--primary);
+}
+
+header {
+  border-bottom: 1px solid var(--terciary);
+}
+
+#cross-icon, #keyboard-icon, #mic-icon, #camera-icon, #search-icon {
+  position: absolute;
+  top: 14px;
+  font-size: 18px;
+}
+
+#input-box {
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+#input-box form {
+  display: inline-block;
+  position: relative;
+}
+
+#input-box form input {
+  height: 44px;
+  border-radius: 22px;
+  width: 597px;
+  border: 1px solid var(--terciary);
+  padding: 0 21px;
+  margin-left: 146px;
+  font-size: 16px;
+}
+
+#input-box form input:focus {
+  outline: 0;
+}
+
+#input-box img {
+  width: 92px;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+#camera-icon {
+  right: 53px;
+}
+
+#cross-icon {
+  right: 160px;
+  padding-right: 10px;
+  border-right: 1px solid var(--terciary);
+}
+
+#keyboard-icon {
+  right: 125px;
+}
+
+#mic-icon {
+  right: 88px;
+}
+
+#search-icon {
+  right: 18px;
 }
