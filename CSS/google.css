@@ -99,6 +99,9 @@ header > nav ul li span {
   border: 1px solid var(--secondary)
 }
 
+#login:hover {
+  cursor: pointer;
+}
 
 .active {
   border-bottom: 3px solid var(--secondary);
