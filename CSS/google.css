@@ -92,11 +92,6 @@ header > div img {
   margin-right: 3px;
 }
 
-#mic-icon {
-  right: 88px;
-  color: var(--terciary);
-}
-
 #search-icon {
   right: 18px;
   color: var(--secondary);
@@ -113,11 +108,12 @@ header > div img {
   color: var(--terciary);
 }
 
-.lnr-cross:hover .tooltip-cross, .lnr-keyboard:hover .tooltip-keyboard {
+.lnr-cross:hover .tooltip-cross, .lnr-keyboard:hover .tooltip-keyboard,
+.lnr-mic:hover .tooltip-mic {
   visibility: visible;
 }
 
-.lnr-cross, .lnr-keyboard, #mic-icon, #camera-icon, #search-icon {
+.lnr-cross, .lnr-keyboard, .lnr-mic, #camera-icon, #search-icon {
   position: absolute;
   top: 14px;
   font-size: 18px;
@@ -128,7 +124,12 @@ header > div img {
   color: var(--terciary);
 }
 
-.tooltip-cross, .tooltip-keyboard {
+.lnr-mic {
+  right: 88px;
+  color: var(--terciary);
+}
+
+.tooltip-cross, .tooltip-keyboard, .tooltip-mic {
   visibility: hidden;
   width: 40px;
   font-size: 12px;
@@ -144,7 +145,7 @@ header > div img {
   border: 1px solid var(--terciary);
 }
 
-.tooltip-cross::after, .tooltip-keyboard::after {
+.tooltip-cross::after, .tooltip-keyboard::after, .tooltip-mic::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -158,4 +159,9 @@ header > div img {
 .tooltip-keyboard {
   width: 180px;
   margin-left: -90px;
+}
+
+.tooltip-mic {
+  width: 100px;
+  margin-left: -50px;
 }
