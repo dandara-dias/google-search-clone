@@ -52,6 +52,10 @@ header > div form input:focus {
   outline: 0;
 }
 
+header > div form input:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 header > div img {
   width: 100px;
   position: absolute;
