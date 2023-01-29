@@ -87,10 +87,6 @@ header > div img {
   margin-right: 3px;
 }
 
-#search-icon {
-  right: 18px;
-  color: var(--secondary);
-}
 
 .active {
   border-bottom: 3px solid var(--secondary);
@@ -109,11 +105,12 @@ header > div img {
 }
 
 .lnr-cross:hover .tooltip-cross, .lnr-keyboard:hover .tooltip-keyboard,
-.lnr-mic:hover .tooltip-mic, .lnr-camera:hover .tooltip-camera {
+.lnr-mic:hover .tooltip-mic, .lnr-camera:hover .tooltip-camera,
+.lnr-magnifier:hover .tooltip-magnifier {
   visibility: visible;
 }
 
-.lnr-cross, .lnr-keyboard, .lnr-mic, .lnr-camera, #search-icon {
+.lnr-cross, .lnr-keyboard, .lnr-mic, .lnr-camera, .lnr-magnifier {
   position: absolute;
   top: 14px;
   font-size: 18px;
@@ -124,12 +121,17 @@ header > div img {
   color: var(--terciary);
 }
 
+.lnr-magnifier {
+  right: 18px;
+  color: var(--secondary);
+}
+
 .lnr-mic {
   right: 88px;
   color: var(--terciary);
 }
 
-.tooltip-cross, .tooltip-keyboard, .tooltip-mic, .tooltip-camera {
+.tooltip-cross, .tooltip-keyboard, .tooltip-mic, .tooltip-camera, .tooltip-magnifier {
   visibility: hidden;
   width: 40px;
   font-size: 12px;
@@ -146,7 +148,7 @@ header > div img {
 }
 
 .tooltip-cross::after, .tooltip-keyboard::after, .tooltip-mic::after,
-.tooltip-camera::after {
+.tooltip-camera::after, .tooltip-magnifier::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -157,17 +159,22 @@ header > div img {
   border-color: transparent transparent var(--terciary) transparent;
 }
 
+.tooltip-camera {
+  width: 120px;
+  margin-left: -60px;
+}
+
 .tooltip-keyboard {
   width: 180px;
   margin-left: -90px;
 }
 
+.tooltip-magnifier {
+  width: 60px;
+  margin-left: -30px;
+}
+
 .tooltip-mic {
   width: 100px;
   margin-left: -50px;
-}
-
-.tooltip-camera {
-  width: 120px;
-  margin-left: -60px;
 }
