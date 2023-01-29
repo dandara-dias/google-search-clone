@@ -123,3 +123,34 @@ header > div img {
 .active {
   border-bottom: 3px solid var(--secondary);
 }
+
+.tooltip-cross {
+  visibility: hidden;
+  width: 40px;
+  font-size: 12px;
+  background-color: var(--primary);
+  color: var(--terciary);
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 200%;
+  left: 10%;
+  margin-left: -20px;
+  border: 1px solid var(--terciary);
+}
+
+.tooltip-cross::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--terciary) transparent;
+}
+
+.lnr-cross:hover .tooltip-cross {
+  visibility: visible;
+}
