@@ -80,6 +80,36 @@ header > div img {
   color: var(--terciary);
 }
 
+#links-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 146px;
+  margin-bottom: 0;
+}
+
+#links-list .active a {
+  color: var(--secondary);
+}
+
+#links-list li {
+  display: inline-block;
+  padding: 0 11px;
+}
+
+#links-list li a {
+  color: var(--terciary);
+  text-decoration: none;
+  font-size: 13px;
+  padding-bottom: 12px;
+  display: inline-block;
+}
+
+#links-list li span {
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 3px;
+}
+
 #mic-icon {
   right: 88px;
   color: var(--terciary);
@@ -88,4 +118,8 @@ header > div img {
 #search-icon {
   right: 18px;
   color: var(--secondary);
+}
+
+.active {
+  border-bottom: 3px solid var(--secondary);
 }
