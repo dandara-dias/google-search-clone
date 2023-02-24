@@ -103,6 +103,12 @@ main {
   padding-right: 35px;
 }
 
+main > p {
+  color: var(--extra);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 #login {
   padding: 10px;
   border-radius: 10px;
@@ -124,6 +130,32 @@ main {
   flex-direction: row;
   padding-left: 165px;
   padding-right: 70px;
+}
+
+.container .ref-link {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--terciary);
+  text-decoration: none;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  position: relative;
+  width: auto;
+}
+
+.info {
+  flex: 1 1 1;
+  width: 50%;
+  color: var(--extra);
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .lnr-camera {
@@ -176,6 +208,42 @@ main {
 .lnr-mic {
   right: 88px;
   color: var(--terciary);
+}
+
+.main-link {
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.main-link:hover {
+  text-decoration: underline;
+}
+
+.related-results li {
+  display: inline-block;
+}
+
+.related-results li a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.related-results ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+.search-result-box {
+  margin-bottom: 10px;
+}
+
+.search-result-desc {
+  font-size: 14px;
+  color: var(--terciary);
+  line-height: 1.57;
+  margin: 5px 0;
 }
 
 .settings {
@@ -241,4 +309,15 @@ main {
 .tooltip-mic {
   width: 100px;
   margin-left: -50px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--extra);
+  position: absolute;
+  top: 7px;
+  right: -15px;
 }
