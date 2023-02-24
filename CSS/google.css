@@ -37,7 +37,7 @@ h2 {
 }
 
 header {
-  border-bottom: 1px solid var(--terciary);
+  border-bottom: 1px solid var(--extra);
 }
 
 header > div {
@@ -128,6 +128,55 @@ summary {
   color: var(--terciary);
 }
 
+#about-box {
+  border: 1px solid var(--extra);
+  width: 93%;
+}
+
+#first-img {
+  border-top-left-radius: 10px;
+  height: 186px;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 305px;
+  height: 186px;
+  position: absolute;
+  top: 0;
+  left: 124px;
+}
+
+#gallery div {
+  flex: 1 1 40%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+#gallery-box {
+  height: 186px;
+  position: relative;
+}
+
+#gallery-img1 {
+  background-image: url('../Images/onepiece2.jpeg');
+}
+
+#gallery-img2 {
+  background-image: url('../Images/onepiece3.webp');
+}
+
+#gallery-img3 {
+  background-image: url('../Images/onepiece4.png');
+}
+
+#gallery-img4 {
+  background-image: url('../Images/onepiece5.jpg');
+}
+
 #login {
   padding: 10px;
   border-radius: 10px;
@@ -138,6 +187,53 @@ summary {
 
 #login:hover {
   cursor: pointer;
+}
+
+#moreimg-btn {
+  position: absolute;
+  right: 31px;
+  bottom: 0;
+  padding: 10px;
+  font-size: 13px;
+  color: var(--details);
+  background: rgba(0, 0, 0, .6);
+  text-decoration: none;
+  border-top-left-radius: 5px;
+}
+
+#moreimg-btn span {
+  margin-right: 5px;
+}
+
+#name {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  color: var(--terciary);
+}
+
+#name-box {
+  border-bottom: 1px solid var(--extra);
+  padding: 0 15px;
+}
+
+#role {
+  color: var(--extra);
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  color: var(--terciary);
+  line-height: 1.57;
+  padding: 0 15px;
+}
+
+.about-text span {
+  font-weight: bold;
 }
 
 .active {
@@ -256,6 +352,11 @@ summary {
   list-style: none;
   padding-left: 0;
   margin: 5px 0;
+}
+
+.result-date {
+  font-size: 10px;
+  color: var(--extra);
 }
 
 .search-result-box {
