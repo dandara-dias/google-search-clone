@@ -23,6 +23,19 @@ body {
   background-color: var(--primary);
 }
 
+details:nth-child(3) {
+  border-bottom: 1px solid var(--extra);
+}
+
+details > p {
+  color: var(--terciary);
+}
+
+h2 {
+  margin-top: 50px;
+  color: var(--terciary);
+}
+
 header {
   border-bottom: 1px solid var(--terciary);
 }
@@ -109,6 +122,12 @@ main > p {
   margin-bottom: 5px;
 }
 
+summary {
+  border-top: 1px solid var(--extra);
+  padding: 10px;
+  color: var(--terciary);
+}
+
 #login {
   padding: 10px;
   border-radius: 10px;
@@ -141,6 +160,10 @@ main > p {
   margin-top: 15px;
   position: relative;
   width: auto;
+}
+
+.details-link {
+  text-decoration: none;
 }
 
 .info {
