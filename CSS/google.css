@@ -216,6 +216,7 @@ summary {
 #name-box {
   border-bottom: 1px solid var(--extra);
   padding: 0 15px;
+  position: relative;
 }
 
 #role {
@@ -290,7 +291,7 @@ summary {
   border-radius: 50%
 }
 
-.lnr-cog:hover, .lnr-laptop-phone:hover {
+.lnr-cog:hover, .lnr-laptop-phone:hover, .lnr-link:hover {
   background-color: var(--terciary);
 }
 
@@ -317,6 +318,16 @@ summary {
 .lnr-keyboard {
   right: 125px;
   color: var(--terciary);
+}
+
+.lnr-link {
+  font-size: 20px;
+  right: 40px;
+  top: 10px;
+  position: absolute;
+  color: var(--details);
+  padding: 5px;
+  border-radius: 50%
 }
 
 .lnr-magnifier {
