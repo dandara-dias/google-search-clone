@@ -1,6 +1,6 @@
 <h1 align="center">< Google Search Clone /></h1>
 
-<p align="center">🖥️ Aplicação clone da Pesquisa Google, com tema escuro. 🖥️ Em construção 🚧</p>
+<p align="center">🖥️ Aplicação clone da Pesquisa Google, com tema escuro. 🖥️ Concluído ✔️</p>
 
 <p align="center">
 • <a href="#-sobre-o-projeto">Sobre</a> •
